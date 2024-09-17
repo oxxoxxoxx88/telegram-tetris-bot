@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 
+'unsafe-eval';">
     <meta charset="UTF-8">
-    <meta name="viewport" 
-content="width=device-width, 
-initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tetris Game</title>
     <style>
         body {
@@ -23,17 +23,13 @@ initial-scale=1.0">
     </style>
 </head>
 <body>
-    <!-- Здесь мы добавляем холст для игры 
--->
-    <canvas id="gameCanvas" width="300" 
-height="400"></canvas>
+    <!-- Здесь мы добавляем холст для игры -->
+    <canvas id="gameCanvas" width="300" height="400"></canvas>
 
-    <!-- Этот скрипт подключает наш 
-JavaScript с игровой логикой -->
+    <!-- Этот скрипт подключает наш JavaScript с игровой логикой -->
     <script src="game.js"></script>
 </body>
 </html>
-
 
 
 
