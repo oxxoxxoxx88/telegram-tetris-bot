@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" 
+    <meta charset="UTF-8">
+    <meta name="viewport" 
 content="width=device-width, 
 initial-scale=1.0">
-  <title>Tetris Web App</title>
+    <title>Tetris Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            background-color: #000;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to Tetris</h1>
-  <p>This is a simple Tetris game 
-integrated with Telegram Web Apps API.</p>
+    <!-- Здесь мы добавляем холст для игры 
+-->
+    <canvas id="gameCanvas" width="300" 
+height="400"></canvas>
+
+    <!-- Этот скрипт подключает наш 
+JavaScript с игровой логикой -->
+    <script src="game.js"></script>
 </body>
 </html>
-
 
 
 
